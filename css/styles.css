@@ -16,7 +16,7 @@ body {
     z-index: auto;
     box-sizing: border-box;
     position: static;
-    margin: 10px;  /* Optional margin for spacing */
+    margin: 0px;  /* Optional margin for spacing */
 }
 
 .logo {
@@ -277,8 +277,10 @@ hr {
 /* Media Queries for responsive design */
 @media (max-width: 768px) {
     .profile {
-        flex-direction: column; /* Stack logo and name vertically on small screens */
+        flex-direction: flex; /* Stack logo and name vertically on small screens */
         text-align: center; /* Center text on small screens */
+        margin: auto;
+        width: 100%;
     }
 
     .logo {
