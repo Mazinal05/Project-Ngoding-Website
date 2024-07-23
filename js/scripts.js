@@ -296,3 +296,18 @@ window.onload = function () {
     const endDate = new Date("August 1, 2024 12:00:00").getTime();
     startCountdown(endDate);
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+    const heartIcon = document.getElementById('heart-icon');
+    const heartValue = document.getElementById('heart-value');
+
+    // Load the initial value from localStorage or set to 0 if not found
+    let value = parseInt(localStorage.getItem('heartValue')) || 0;
+    heartValue.textContent = value;
+
+    heartIcon.addEventListener('click', () => {
+        value++;
+        heartValue.textContent = value;
+        localStorage.setItem('heartValue', value);
+    });
+});

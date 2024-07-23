@@ -274,6 +274,29 @@ hr {
     color: white;
 }
 
+#heart-container {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#heart-icon {
+    color: red;
+    transition: transform 0.2s ease;
+}
+
+#heart-icon:active {
+    transform: scale(4.2);
+}
+
+#heart-value {
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
 /* Media Queries for responsive design */
 @media (max-width: 768px) {
     .profile {
