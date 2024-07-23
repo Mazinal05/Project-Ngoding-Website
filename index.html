@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="css\styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Uji Coba</title>
+    </head>
+
+    <body>
+
+        <p>Website Masih Dalam Pengembangan</p>
+        <div id="timer">00:00:00</div>
+
+        <section class="profile">
+            <div>
+            <img src="assets/izazfal.png" class="logo">
+            </div>
+            <div>
+            <h2 class="nametag">Izaz Naufal</h2>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="header">
+            <p>19 year old video editor based in Bontang, 
+                learning AE & PR.</p>
+        </section>
+
+        <hr>
+
+        <section class="main">
+            <h2 class="tmain">Latest Video Edit</h2>
+                <div class="video-container">
+                    <video width="360" height="240" controls class="mvideo ">
+                <source src="assets/Coret Baju New ver.mp4" type="video/mp4">
+                        </video>
+                </div>
+        </section>
+
+        <div class="platform">
+            <a href="https://www.instagram.com/izazfal05/" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+
+        <hr>
+
+        <h2 class="tmain">Education Background</h2>
+        <div class="edupersonal">
+            <div>
+                <img src="assets/Izaz Information System.png" class="personal">
+            </div>
+            <div class="education">
+                <div id="eduname">
+                    <img src="assets/sd.png" class="edusize">
+                    <p>SDN 005 Bontang Utara</p>
+                </div>
+                <div id="eduname">
+                    <img src="assets/SMP.png" class="edusize">
+                    <p>SMPN 5 Bontang</p>
+                </div>
+                <div id="eduname">
+                    <img src="assets/SMA.png" class="edusize">
+                    <p>SMA YPVDP Bontang</p>
+                </div>
+                <div id="eduname">
+                    <img src="assets/Universitas.png" class="edusize">
+                    <p>Sistem Informasi</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="tmain">Top 5 Music Favorite</h2>
+
+        <section>
+        <div class="playlist-widget">
+            <div class="current-song">
+                <h2 id="song-title">Scroll Down The Songs</h2>
+                <p id="artist-name"></p>
+            </div>
+            <div class="custom-audio-player">
+                <audio id="audio-player">
+                    <source src="path/to/song1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="controls">
+                    <button id="prev" onclick="prevSong()">⏮ </button>
+                    <button id="play-pause" onclick="togglePlayPause()">▶️</button>
+                    <button id="next" onclick="nextSong()">⏭️</button>
+                </div>
+                <div class="progress-container">
+                    <input type="range" id="progress-bar" value="0" step="0.1" min="0" max="100"/>
+                </div>
+                <div class="time">
+                    <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                </div>
+            </div>
+            <div class="lyrics-container">
+                <p id="lyrics"></p>
+            </div>
+            <div class="song-list">
+                <ul id="song-list">
+                    <!-- Songs will be dynamically inserted here -->
+                </ul>
+            </div>
+        </div>
+        </section>
+
+        <div class="nav-flex">
+            <div class="nav-item border" style="background-color: rgb(217,217,217);">
+                <a class="nav-link text-secondary text-center" href="javascript:">Info</a>
+            </div>
+            <div class="nav-item border" style="background-color: rgb(217,217,217);">
+                <a class="nav-link text-secondary text-center" href="javascript:">Contact</a>
+            </div>
+            <div class="nav-item border" style="background-color: rgb(217,217,217);">
+                <a class="nav-link text-secondary text-center" href="javascript:">Media Social</a>
+            </div>
+        </div>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
