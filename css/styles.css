@@ -11,18 +11,18 @@ body {
 
 .profile {
     display: flex;
-    align-items: center;  /* Menyelaraskan logo dan nama secara vertikal */
+    align-items: center;  /* Align logo and name vertically */
     line-height: 48px;
     z-index: auto;
     box-sizing: border-box;
     position: static;
-    margin: 10px;  /* Margin opsional untuk jarak dari tepi */
+    margin: 10px;  /* Optional margin for spacing */
 }
 
 .logo {
-    border-radius: 50%;  /* Membuat logo menjadi lingkaran */
+    border-radius: 50%;  /* Make the logo circular */
     width: 70px;
-    margin-right: 15px;  /* Jarak antara logo dan nama */
+    margin-right: 15px;  /* Space between logo and name */
     margin-top: 20px;
 }
 
@@ -34,9 +34,9 @@ body {
 
 hr {
     border: none;
-    height: 2px;  /* Ketebalan garis */
-    background-color: #40534C;  /* Warna garis */
-    width: 100%;  /* Lebar garis */
+    height: 2px;  /* Thickness of the line */
+    background-color: #40534C;  /* Line color */
+    width: 100%;  /* Line width */
 }
 
 .header {
@@ -44,7 +44,7 @@ hr {
     font-size: 15px;
     border-radius: 10px;
     text-shadow: 2px 2px 5px #000000;
-    color:#ADBBDA;
+    color: #ADBBDA;
 }
 
 .tmain {
@@ -122,9 +122,9 @@ hr {
 }
 
 .personal {
-    border-radius: 20%;  /* Membuat logo menjadi lingkaran */
+    border-radius: 20%;  /* Make the logo circular */
     width: 190px;
-    margin-right: 15px;  /* Jarak antara logo dan nama */
+    margin-right: 15px;  /* Space between logo and name */
     margin-top: 20px;
     background-color: #40534C;
     box-shadow: -5px 10px 2px;
@@ -171,7 +171,6 @@ hr {
     margin-bottom: 30px;
 }
 
-
 .current-song h2 {
     margin: 0;
     font-size: 15px;
@@ -199,7 +198,7 @@ hr {
 }
 
 .controls button {
-    background-color: #677D6A;;
+    background-color: #677D6A;
     border: none;
     color: white;
     padding: 10px 15px;
@@ -278,7 +277,7 @@ hr {
 /* Media Queries for responsive design */
 @media (max-width: 768px) {
     .profile {
-        flex-direction: row; /* Stack logo and name vertically on small screens */
+        flex-direction: column; /* Stack logo and name vertically on small screens */
         text-align: center; /* Center text on small screens */
     }
 
@@ -339,7 +338,6 @@ hr {
         padding: 8px;
     }
 }
-
 
 @media (max-width: 480px) {
     .header {
